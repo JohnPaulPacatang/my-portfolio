@@ -1,0 +1,191 @@
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+body {
+background-color: #171717;
+font-family: 'Kanit', sans-serif;
+font-size: 22px;
+color: #ff9f1c;
+}
+
+h2, h3 {
+  color: #e71d36;
+}
+hr{
+  background-color: #2ec4b6;
+  height: 2px;
+  border: none;
+}
+
+.summary{
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction:inherit;
+  justify-content: space-evenly;
+}
+
+.profile {
+    border:3px solid#2ec4b6 ;
+    border-radius: 50%;
+    height: 200px;
+    
+}
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    color: #212121;
+    --bg-color: #f6f7f8;
+    --main-color: #2ec4b6;
+    --main-focus: #2d8cf0;
+    width: 230px;
+    height: 330px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 6px 6px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    padding: 20px;
+    gap: 10px;
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+  }
+  
+  .social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+  }
+  
+  .social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook svg {
+    fill: #f2f2f2;
+  }
+  
+  .facebook:hover svg {
+    fill: #3b5998;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+  }
+  
+  .github:hover svg {
+    fill: #333;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin svg {
+    fill: #f2f2f2;
+  }
+  
+  .linkedin:hover svg {
+    fill: #0077b5;
+  }
+  
+.certificate {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction:inherit;
+  justify-content: space-evenly;
+}
+.certificate-container img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact{
+  text-align: center;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
+}
+
+.skill{
+  display: flex;
+  justify-content: space-between;
+}
+
+.kulangot {
+  margin-top: 75px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .kulangot {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 300px;
+    height: auto;
+  }
+}
+
+
+
+
+
+
