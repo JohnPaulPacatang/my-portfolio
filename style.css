@@ -480,6 +480,29 @@ section .header {
   left: 0;
 }
 
+
+/*Hobbies na di ko alam kung hobbies ko*/
+
+.hobbies{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.hobbies img{
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.hobbies h2{
+  color: #fff;
+}
+
+
 /*Footer na ewan*/
 footer {
   position: relative;
@@ -725,6 +748,10 @@ body.light-mode .project .goto {
 
 body.light-mode .project .goto::before {
   background-color: #252422;
+}
+
+body.light-mode .hobbies h2{
+  color: #252422;
 }
 
 body.light-mode footer .socials a {

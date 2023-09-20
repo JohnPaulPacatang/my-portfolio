@@ -1,266 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <nav>
-      <label class="switch" id="lightModeToggle">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider"></span>
-      </label>
-  
-      <ul class="nav-links">
-        <li id="link1" class="link"><a href="#">Services</a></li>
-        <li id="link2" class="link"><a href="#">Skills</a></li>
-        <li id="link3" class="link"><a href="#">Project</a></li>
-        <li id="link4" class="link"><a href="#">Contact</a></li>
-      </ul>
 
-      <div class="navbar-toggle" id="navbar-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <nav>
+    <label class="switch" id="lightModeToggle">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+
+    <ul class="nav-links">
+      <li id="link1" class="link"><a href="#">Services</a></li>
+      <li id="link2" class="link"><a href="#">Skills</a></li>
+      <li id="link3" class="link"><a href="#">Project</a></li>
+      <li id="link4" class="link"><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="navbar-toggle" id="navbar-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <header class="container">
+    <div class="content" data-aos="fade-right">
+      <h1>Hi, I'm <span>John Paul Pacatang</span>, Web Developer</h1>
+      <p>
+        I am currently 3rd year Computer Science student from BSCS 3C at St.
+        Clare College of Caloocan.
+      </p>
+      <button class="btn" id="hireMeButton">Hire Me</button>
+    </div>
+    <div class="image" data-aos="fade-left">
+      <img src="images/head.png" />
+    </div>
+  </header>
+
+  <div class="Services"></div> <!---For Js Scroll-->
+  <section class="container">
+    <h2 class="header">My Services</h2>
+    <div class="services-list" data-aos="zoom-in">
+      <div>
+        <img src="images/webdesign.png" alt="Web">
+        <h2>Web Design</h2>
+        <p>Kunware may design</p>
       </div>
-    </nav>
+      <div>
+        <img src="images/uidesign.png" alt="UI Design">
+        <h2>UI/UX Design</h2>
+        <p>Hanap hanap lang design</p>
+      </div>
+      <div>
+        <img src="images/website.png" alt="Responsive">
+        <h2>Responsive Website</h2>
+        <p>Hindi tapos sa freecodecamp</p>
+      </div>
+    </div>
+  </section>
 
-    <header class="container">
-      <div class="content" data-aos="fade-right">
-        <h1>Hi, I'm <span>John Paul Pacatang</span>, Web Developer</h1>
+
+  <section class="container">
+    <h2 class="header">EDUCATIONS</h2>
+    <div class="education" data-aos="zoom-in">
+      <div class="card">
+        <span><i class="ri-graduation-cap-fill"></i></span>
+        <h4>Tertiary</h4>
         <p>
-          I am currently 3rd year Computer Science student from BSCS 3C at St.
-          Clare College of Caloocan.
+          Bachelor of Science in Computer Science at St. Clare College of
+          Caloocan(2022-present)
         </p>
-        <button class="btn" id="hireMeButton">Hire Me</button>
       </div>
-      <div class="image" data-aos="fade-left">
-        <img src="images/head.png" />
+      <div class="card">
+        <span><i class="ri-graduation-cap-fill"></i></span>
+        <h4>Senior High School</h4>
+        <p>
+          Graduated as a ICT student at Access Computer College (2017-2019)
+        </p>
       </div>
-    </header>
-    
-    <div class="Services"></div>  <!---For Js Scroll-->
-    <section class="container">
-            <h2 class="header">My Services</h2>
-            <div class="services-list" data-aos="zoom-in">
-                <div>
-                    <img src="images/webdesign.png" alt="Web">
-                    <h2>Web Design</h2>
-                    <p>Kunware may design</p>
-                </div>
-                <div>
-                    <img src="images/uidesign.png" alt="UI Design">
-                    <h2>UI/UX Design</h2>
-                    <p>Hanap hanap lang design</p>             
-                </div>
-                <div>
-                    <img src="images/website.png" alt="Responsive">
-                    <h2>Responsive Website</h2>
-                    <p>Hindi tapos sa freecodecamp</p>
-                </div>
-            </div>
-    </section>
-
-    
-    <section class="container">
-      <h2 class="header">EDUCATIONS</h2>
-      <div class="education" data-aos="zoom-in">
-        <div class="card">
-          <span><i class="ri-graduation-cap-fill"></i></span>
-          <h4>Tertiary</h4>
-          <p>
-            Bachelor of Science in Computer Science at St. Clare College of
-            Caloocan(2022-present)
-          </p>
-        </div>
-        <div class="card">
-          <span><i class="ri-graduation-cap-fill"></i></span>
-          <h4>Senior High School</h4>
-          <p>
-            Graduated as a ICT student at Access Computer College (2017-2019)
-          </p>
-        </div>
-        <div class="card">
-          <span><i class="ri-graduation-cap-fill"></i></span>
-          <h4>Junior High School</h4>
-          <p>Graduated at Sampaguita High School(2013-2017)</p>
-        </div>
-        <div class="card">
-          <span><i class="ri-graduation-cap-fill"></i></span>
-          <h4>Primary</h4>
-          <p>Graduated at Sampaguita Elementary School(2007-2013)</p>
-        </div>
+      <div class="card">
+        <span><i class="ri-graduation-cap-fill"></i></span>
+        <h4>Junior High School</h4>
+        <p>Graduated at Sampaguita High School(2013-2017)</p>
       </div>
-    </section>
-
-    <div class="Skills"></div> <!---For Js Scroll-->
-    <section class="container">
-      <h2 class="header">Skills</h2>
-      <div class="skills" data-aos="zoom-in">
-        <div class="image">
-          <img src="images/Coding.png" />
-        </div>
-        <div class="card">
-            <span><i class="ri-code-box-fill"></i></span>
-            <h4>Coding</h4>
-            <ul>
-                <li><i class="ri-html5-fill"></i> Html</li>
-                <li><i class="ri-css3-fill"></i> Css</li>
-                <li><i class="fab fa-java icon"></i> Java</li>
-                <li><i class="fab fa-cuttlefish icon"></i> C++</li>
-                <li><i class="fas fa-database icon"></i> SQL</li>
-
-            </ul>
-        </div>
-        <div class="card">
-            <span><i class="ri-microsoft-fill"></i></span>
-            <h4>Microsoft</h4>
-            <ul>
-                <li><i class="ri-file-word-fill"></i> Word</li>
-                <li><i class="ri-file-ppt-fill"></i> Powerpoint</li>
-                <li><i class="ri-file-excel-fill"></i> Excel</li>
-            </ul>
-        </div> 
-        <div class="card">
-            <span><i class="ri-edit-2-fill"></i></i></span>
-            <h4>Editing</h4>
-            <ul>
-                <li><i class="ri-image-edit-fill"></i> Adobe Photoshop</li>
-                <li><i class="ri-vidicon-2-fill"></i> Adobe Premiere</li>
-            </ul>
-        </div>
+      <div class="card">
+        <span><i class="ri-graduation-cap-fill"></i></span>
+        <h4>Primary</h4>
+        <p>Graduated at Sampaguita Elementary School(2007-2013)</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container" >
-      <h2 class="header">Certificates</h2>
-        <div class="certificate" data-aos="zoom-in">
-          <div class="certificate-container">
-          <a href="images/certificate1.png" target="_blank" title="This is a certificate">
-            <img src="images/certificate1.png" alt="Certificate1" >
-          </a>    
-          <a href="images/certificate2.png" target="_blank" title="This is a certificate">
-            <img src="images/certificate2.png" alt="Certificate2" >
-          </a> 
-          <a href="images/certificate3.png" target="_blank" title="This is a certificate">
-            <img src="images/certificate3.png" alt="Certificate3" >
-          </a> 
-          <a href="images/certificate4.png" target="_blank" title="This is a certificate">
-            <img src="images/certificate4.png" alt="Certificate4" >
-          </a> 
-          <a href="images/certificate5.png" target="_blank" title="This is a certificate">
-            <img src="images/certificate5.png" alt="Certificate5" >
-          </a>
-          </div>
-        </div> 
-    </section>
-    
-    <div class="Project"></div> <!---For Js Scroll-->
-    <section class="container">
-      <h2 class="header">PROJECTS</h2>
-      <p class="sub-header">Work in progress</p>
-      <div class="project" data-aos="zoom-in">
-        <div class="card">
-          <div class="content" >
-            <h4>One Piece</h4>
-              <img src="images/projectpreview.png" alt="Project preview">
-              <br>
-              <a href="https://johnpaulpacatang.000webhostapp.com/" target="_blank" class="goto">Go to website</a>
-          </div>
-        </div>
+  <div class="Skills"></div> <!---For Js Scroll-->
+  <section class="container">
+    <h2 class="header">Skills</h2>
+    <div class="skills" data-aos="zoom-in">
+      <div class="image">
+        <img src="images/Coding.png" />
       </div>
-    </section>  
-
-    <footer class="container">
-      <div class="column" data-aos="zoom-in">
-        <h4>Contact No.</h4>
+      <div class="card">
+        <span><i class="ri-code-box-fill"></i></span>
+        <h4>Coding</h4>
         <ul>
-          <li>09193591280</li>
+          <li><i class="ri-html5-fill"></i> Html</li>
+          <li><i class="ri-css3-fill"></i> Css</li>
+          <li><i class="fab fa-java icon"></i> Java</li>
+          <li><i class="fab fa-cuttlefish icon"></i> C++</li>
+          <li><i class="fas fa-database icon"></i> SQL</li>
+
         </ul>
-        <h4>Email</h4>
+      </div>
+      <div class="card">
+        <span><i class="ri-microsoft-fill"></i></span>
+        <h4>Microsoft</h4>
         <ul>
-          <li>johnpaulpacatang1@gmail.com</li>
+          <li><i class="ri-file-word-fill"></i> Word</li>
+          <li><i class="ri-file-ppt-fill"></i> Powerpoint</li>
+          <li><i class="ri-file-excel-fill"></i> Excel</li>
         </ul>
-        <div class="socials">
-          <a href="https://github.com/JohnPaulPacatang" target="_blank"><i class="ri-github-line"></i></a>
-          <a href="https://www.linkedin.com/in/john-paul-pacatang-337993289/" target="_blank"><i class="ri-linkedin-line"></i></a>
-          <a href="https://www.facebook.com/johnpaul.pacatang.10" target="_blank"><i class="ri-facebook-line"></i></a>
+      </div>
+      <div class="card">
+        <span><i class="ri-edit-2-fill"></i></i></span>
+        <h4>Editing</h4>
+        <ul>
+          <li><i class="ri-image-edit-fill"></i> Adobe Photoshop</li>
+          <li><i class="ri-vidicon-2-fill"></i> Adobe Premiere</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="header">Certificates</h2>
+    <div class="certificate" data-aos="zoom-in">
+      <div class="certificate-container">
+        <a href="images/certificate1.png" target="_blank" title="This is a certificate">
+          <img src="images/certificate1.png" alt="Certificate1">
+        </a>
+        <a href="images/certificate2.png" target="_blank" title="This is a certificate">
+          <img src="images/certificate2.png" alt="Certificate2">
+        </a>
+        <a href="images/certificate3.png" target="_blank" title="This is a certificate">
+          <img src="images/certificate3.png" alt="Certificate3">
+        </a>
+        <a href="images/certificate4.png" target="_blank" title="This is a certificate">
+          <img src="images/certificate4.png" alt="Certificate4">
+        </a>
+        <a href="images/certificate5.png" target="_blank" title="This is a certificate">
+          <img src="images/certificate5.png" alt="Certificate5">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="Project"></div> <!---For Js Scroll-->
+  <section class="container">
+    <h2 class="header">PROJECTS</h2>
+    <p class="sub-header">Work in progress</p>
+    <div class="project" data-aos="zoom-in">
+      <div class="card">
+        <div class="content">
+          <h4>One Piece</h4>
+          <img src="images/projectpreview.png" alt="Project preview">
+          <br>
+          <a href="https://johnpaulpacatang.000webhostapp.com/" target="_blank" class="goto">Go to website</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <div class="copyright">© John Paul Pacatang. All Rights Reserved.</div>
+  <section>
+    <h2 class="header">Hobbies</h2>
+    <div class="hobbies" data-aos="zoom-in">
+      <div>
+        <h2>Basketball</h2>
+        <img src="images/basketball.png" alt="Web">
+      </div>
+      <div>
+        <h2>Gaming</h2>
+        <img src="images/gaming.png" alt="UI Design">
+      </div>
+      <div>
+        <h2>motorcycle</h2>
+        <img src="images/motorcyle.png" alt="Responsive">       
+      </div>
+    </div>
+  </section>
 
-    <a id="scroll-up" class="scroll-up" href="#">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"></path>
-      </svg>
-    </a>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const scrollUpButton = document.querySelector(".scroll-up");
 
-        scrollUpButton.addEventListener("click", function (e) {
-            e.preventDefault();
+  <footer class="container">
+    <div class="column" data-aos="zoom-in">
+      <h4>Contact No.</h4>
+      <ul>
+        <li>09193591280</li>
+      </ul>
+      <h4>Email</h4>
+      <ul>
+        <li>johnpaulpacatang1@gmail.com</li>
+      </ul>
+      <div class="socials">
+        <a href="https://github.com/JohnPaulPacatang" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/john-paul-pacatang-337993289/" target="_blank"><i
+            class="ri-linkedin-line"></i></a>
+        <a href="https://www.facebook.com/johnpaul.pacatang.10" target="_blank"><i class="ri-facebook-line"></i></a>
+      </div>
+    </div>
+  </footer>
 
-            // Scroll smoothly to the top of the page
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
+  <div class="copyright">© John Paul Pacatang. All Rights Reserved.</div>
+
+  <a id="scroll-up" class="scroll-up" href="#">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path fill="rgba(255,255,255,1)"
+        d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+      </path>
+    </svg>
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollUpButton = document.querySelector(".scroll-up");
+
+      scrollUpButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Scroll smoothly to the top of the page
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
 
-        window.addEventListener("scroll", function () {
-            const currentScrollPosition = window.scrollY;
+      window.addEventListener("scroll", function () {
+        const currentScrollPosition = window.scrollY;
 
-            if (currentScrollPosition > 100) { // Adjust the threshold as needed
-                scrollUpButton.style.opacity = "1"; // Show the button
-                scrollUpButton.style.bottom = "1rem"; // Move it back into the viewport
-            } else {
-                scrollUpButton.style.opacity = "0"; // Hide the button
-                scrollUpButton.style.bottom = "-40px"; // Move it below the viewport
-            }
-            });
-        });
-    </script>
-    
-    <script>
-        const lightModeToggle = document.getElementById('lightModeToggle');
-        const body = document.body;
-
-        // Function to toggle light mode
-        function toggleLightMode() {
-            body.classList.toggle('light-mode');
-            const isLightMode = body.classList.contains('light-mode');
-            localStorage.setItem('lightMode', isLightMode ? 'enabled' : 'disabled');
+        if (currentScrollPosition > 100) { // Adjust the threshold as needed
+          scrollUpButton.style.opacity = "1"; // Show the button
+          scrollUpButton.style.bottom = "1rem"; // Move it back into the viewport
+        } else {
+          scrollUpButton.style.opacity = "0"; // Hide the button
+          scrollUpButton.style.bottom = "-40px"; // Move it below the viewport
         }
+      });
+    });
+  </script>
 
-        // Check the initial light mode state
-        const isLightMode = localStorage.getItem('lightMode') === 'enabled';
+  <script>
+    const lightModeToggle = document.getElementById('lightModeToggle');
+    const body = document.body;
 
-        // Toggle light mode if not in dark mode
-        if (isLightMode) {
-            body.classList.remove('light-mode');
-            lightModeToggle.checked = false;
-        }
+    // Function to toggle light mode
+    function toggleLightMode() {
+      body.classList.toggle('light-mode');
+      const isLightMode = body.classList.contains('light-mode');
+      localStorage.setItem('lightMode', isLightMode ? 'enabled' : 'disabled');
+    }
 
-        // Toggle light mode when the checkbox is changed
-        lightModeToggle.addEventListener('change', toggleLightMode);
-    </script>
+    // Check the initial light mode state
+    const isLightMode = localStorage.getItem('lightMode') === 'enabled';
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="script.js"></script>
-  </body>
+    // Toggle light mode if not in dark mode
+    if (isLightMode) {
+      body.classList.remove('light-mode');
+      lightModeToggle.checked = false;
+    }
+
+    // Toggle light mode when the checkbox is changed
+    lightModeToggle.addEventListener('change', toggleLightMode);
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
