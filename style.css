@@ -390,7 +390,7 @@ section .header {
 
 /*Certificate na luma*/
 .certificate img {
-  max-width: 300px;
+  max-width: 290px;
   height: auto;
   margin: 1rem;
   border-radius: 10px;
