@@ -17,11 +17,25 @@ a {
   text-decoration: none;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-hr {
+  border: none;
+  width: 70%;
+  height: 1px;
+  background-color: #888;
+  margin: 20px 0;
+  backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #18181b;
 }
-
 
 /*Light mode switch ko*/
 .switch {
@@ -216,6 +230,45 @@ nav {
   margin: auto;
   padding: 6rem 2rem;
 }
+.about {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+.services {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.educations {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.skills {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+.certificates {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+.projects {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.hobbies {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
 
 /*About ewan*/
 header {
@@ -297,14 +350,14 @@ section .header {
 
 
 /*Education kuno*/
-.education {
+.education-container {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
-.education .card {
+.education-container .card {
   background-color: #27272a;
   padding: 3rem;
   border: 2px solid transparent;
@@ -312,12 +365,12 @@ section .header {
   transition: all 0.3s ease;
 }
 
-.education .card:hover {
+.education-container .card:hover {
   background-color: #323232;
   border-color: #fff;
 }
 
-.education .card span {
+.education-container .card span {
   display: inline-block;
   background-color: #407bff;
   padding: 2px 9px;
@@ -327,33 +380,33 @@ section .header {
   border-radius: 5px;
 }
 
-.education .card h4 {
+.education-container .card h4 {
   margin-bottom: 0.5rem;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.education .card p {
+.education-container .card p {
   color: #ccc;
   margin-bottom: 1rem;
 }
 
 /*Skills daw*/
-.skills {
+.skills-container {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
-.skills .image img {
+.skills-container .image img {
   max-width: 600px;
   width: 100%;
   margin: auto;
 }
 
-.skills .card {
+.skills-container .card {
   background-color: #27272a;
   padding: 3rem;
   border: 2px solid transparent;
@@ -361,12 +414,12 @@ section .header {
   transition: all 0.3s ease;
 }
 
-.skills .card:hover {
+.skills-container .card:hover {
   background-color: #323232;
   border-color: #fff;
 }
 
-.skills .card span {
+.skills-container .card span {
   display: inline-block;
   background-color: #407bff;
   padding: 2px 9px;
@@ -376,21 +429,21 @@ section .header {
   border-radius: 5px;
 }
 
-.skills .card h4 {
+.skills-container .card h4 {
   margin-bottom: 0.5rem;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.skills .card ul {
+.skills-container .card ul {
   color: #ccc;
   margin-bottom: 1rem;
 }
 
 /*Certificate na luma*/
-.certificate img {
-  max-width: 280px;
+.certificate-container img {
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   border: 1px solid white;
@@ -409,7 +462,7 @@ section .header {
 }
 
 /*Project na isa lang*/
-.project {
+.project-container {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
@@ -418,7 +471,7 @@ section .header {
   text-align: center;
 }
 
-.project .card {
+.project-container .card {
   padding: 3rem 2rem;
   background-color: #27272a;
   display: flex;
@@ -428,17 +481,17 @@ section .header {
   transition: all 0.3s ease;
 }
 
-.project .card:hover {
+.project-container .card:hover {
   background-color: #323232;
   border-color: #fff;
 }
 
-.project .card .content {
+.project-container .card .content {
   flex: 1;
   margin-bottom: 2rem;
 }
 
-.project .card h4 {
+.project-container .card h4 {
   margin-bottom: 1rem;
   color: #fff;
   font-size: 1.2rem;
@@ -446,24 +499,24 @@ section .header {
   text-align: center;
 }
 
-.project .card img {
+.project-container .card img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.project a {
+.project-container a {
   text-decoration: none;
   font-size: 20px;
 }
 
-.project .goto {
+.project-container .goto {
   color: #fff;
   line-height: 2;
   position: relative;
 }
 
-.project .goto::before {
+.project-container .goto::before {
   content: "";
   width: 0;
   height: 2px;
@@ -475,7 +528,7 @@ section .header {
   transition: right 0.4s, width 0.4s, left 0.4s;
 }
 
-.project .goto:hover::before {
+.project-container .goto:hover::before {
   width: 100%;
   left: 0;
 }
@@ -483,7 +536,7 @@ section .header {
 
 /*Hobbies na di ko alam kung hobbies ko*/
 
-.hobbies{
+.hobbies-container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -491,14 +544,14 @@ section .header {
   text-align: center;
 }
 
-.hobbies img{
+.hobbies-container img{
   padding: 1rem;
   max-width: 400px;
   width: 100%;
   margin: auto;
 }
 
-.hobbies h2{
+.hobbies-container h2{
   color: #fff;
 }
 
@@ -586,12 +639,12 @@ footer .column > a:hover {
   header .image {
     grid-area: 1/1/2/2;
   }
-  .education,
-  .skills,
-  .project,
-  .certificate,
+  .education-container,
+  .skills-container,
+  .project-container,
+  .certificate-container,
   .services-list
-  .hobbies{
+  .hobbies-container{
     grid-template-columns: repeat(2, 1fr);
   }
   footer {
@@ -604,12 +657,12 @@ footer .column > a:hover {
   header .image::before {
     display: none;
   }
-  .education,
-  .skills,
-  .project,
-  .certificate,
+  .education-container,
+  .skills-container,
+  .project-container,
+  .certificate-container,
   .services-list,
-  .hobbies{
+  .hobbies-container{
     grid-template-columns: repeat(1, 1fr);
   }
   footer {
@@ -707,7 +760,7 @@ body.light-mode .services-list p{
   color: #252422;
 }
 
-body.light-mode .education .card {
+body.light-mode .education-container .card {
   background-color: #edf2f4;
 }
 
@@ -724,7 +777,7 @@ body.light-mode .card h4 {
   color: #252422;
 }
 
-body.light-mode .skills .card {
+body.light-mode .skills-container .card {
   background-color: #edf2f4;
 }
 
@@ -736,23 +789,23 @@ body.light-mode .ul {
   color: #252422;
 }
 
-body.light-mode .certificate img {
+body.light-mode .certificate-container img {
   border: 1px solid black;
 }
 
-body.light-mode .project .card {
+body.light-mode .project-container .card {
   background-color: #edf2f4;
 }
 
-body.light-mode .project .goto {
+body.light-mode .project-container .goto {
   color: #252422;
 }
 
-body.light-mode .project .goto::before {
+body.light-mode .project-container .goto::before {
   background-color: #252422;
 }
 
-body.light-mode .hobbies h2{
+body.light-mode .hobbies-container h2{
   color: #252422;
 }
 
