@@ -392,7 +392,6 @@ section .header {
 .certificate img {
   max-width: 280px;
   height: auto;
-  margin: 1rem;
   border-radius: 10px;
   border: 1px solid white;
 }
@@ -400,6 +399,7 @@ section .header {
 .certificate-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   flex-direction: row;
   justify-content: space-evenly;
 }
