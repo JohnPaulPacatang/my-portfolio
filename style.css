@@ -654,7 +654,7 @@ footer .column>a:hover {
   /* Your default styles here, for screens up to 1300px wide */
 
   header {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer {
