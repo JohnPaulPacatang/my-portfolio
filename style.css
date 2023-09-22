@@ -29,12 +29,38 @@ a {
   height: 1px;
   background-color: #888;
   margin: 20px 0;
-  backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+  backdrop-filter: blur(10px);
 }
+
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: #18181b;
+}
+
+.background-svg {
+  /* Set the background image using the url() function and specify the path to your SVG file */
+  background-image: url('images/curvelinesfadein.svg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.background-svg1 {
+  /* Set the background image using the url() function and specify the path to your SVG file */
+  background-image: url('images/curvelinesfadeout.svg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+@media (max-width: 768px) {
+  .background-svg, .background-svg1 {
+    background-size: contain; 
+    background-position: center; 
+  }
 }
 
 /*Light mode switch ko*/
@@ -92,7 +118,7 @@ body {
   }
 }
 
-.switch input:checked + .slider:before {
+.switch input:checked+.slider:before {
   background-color: yellow;
   box-shadow: none;
   transform: translateX(1.5em);
@@ -198,15 +224,15 @@ nav {
     display: flex;
   }
 
-  .nav-links.active + .navbar-toggle .bar:nth-child(1) {
+  .nav-links.active+.navbar-toggle .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  .nav-links.active + .navbar-toggle .bar:nth-child(2) {
+  .nav-links.active+.navbar-toggle .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .nav-links.active + .navbar-toggle .bar:nth-child(3) {
+  .nav-links.active+.navbar-toggle .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -230,11 +256,13 @@ nav {
   margin: auto;
   padding: 6rem 2rem;
 }
+
 .about {
   max-width: 1300px;
   margin: auto;
   padding: 6rem 2rem;
 }
+
 .services {
   max-width: 1300px;
   margin: auto;
@@ -252,11 +280,13 @@ nav {
   margin: auto;
   padding: 6rem 2rem;
 }
+
 .certificates {
   max-width: 1300px;
   margin: auto;
   padding: 6rem 2rem;
 }
+
 .projects {
   max-width: 1300px;
   margin: auto;
@@ -325,7 +355,7 @@ section .header {
 
 
 /*Services daw*/
-.services-list{
+.services-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -333,19 +363,20 @@ section .header {
   text-align: center;
 }
 
-.services-list img{
+.services-list img {
   padding: 2rem;
   max-width: 400px;
   width: 100%;
   margin: auto;
 }
 
-.services-list h2{
+.services-list h2 {
   color: #fff;
 }
 
-.services-list p{
+.services-list p {
   color: #fff;
+  max-width: 400px;
 }
 
 
@@ -456,6 +487,7 @@ section .header {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .certificate-container img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
@@ -536,7 +568,7 @@ section .header {
 
 /*Hobbies na di ko alam kung hobbies ko*/
 
-.hobbies-container{
+.hobbies-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -544,14 +576,14 @@ section .header {
   text-align: center;
 }
 
-.hobbies-container img{
+.hobbies-container img {
   padding: 1rem;
   max-width: 400px;
   width: 100%;
   margin: auto;
 }
 
-.hobbies-container h2{
+.hobbies-container h2 {
   color: #fff;
 }
 
@@ -595,7 +627,7 @@ footer .column h4 {
   text-align: center;
 }
 
-footer .column > ul {
+footer .column>ul {
   display: block;
   color: #ccc;
   text-align: center;
@@ -604,7 +636,7 @@ footer .column > ul {
   transition: all 0.3s ease;
 }
 
-footer .column > a:hover {
+footer .column>a:hover {
   color: #407bff;
 }
 
@@ -624,6 +656,7 @@ footer .column > a:hover {
   header {
     grid-template-columns: repeat(3, 1fr);
   }
+
   footer {
     grid-template-columns: 1fr 300px;
   }
@@ -633,38 +666,44 @@ footer .column > a:hover {
   .nav-links {
     display: none;
   }
+
   header {
     grid-template-columns: repeat(1, 1fr);
   }
+
   header .image {
     grid-area: 1/1/2/2;
   }
+
   .education-container,
   .skills-container,
   .project-container,
   .certificate-container,
-  .services-list
-  .hobbies-container{
+  .services-list .hobbies-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   footer {
     grid-template-columns: 1fr 200px;
   }
 }
 
 @media (max-width: 600px) {
+
   /* Styles for screens up to 600px wide */
   header .image::before {
     display: none;
   }
+
   .education-container,
   .skills-container,
   .project-container,
   .certificate-container,
   .services-list,
-  .hobbies-container{
+  .hobbies-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   footer {
     grid-template-columns: 1fr 150px;
   }
@@ -695,7 +734,8 @@ footer .column > a:hover {
 .scroll-up {
   position: fixed;
   right: 1rem;
-  bottom: -40px; /* Initially set it below the viewport */
+  bottom: -40px;
+  /* Initially set it below the viewport */
   z-index: 10;
   width: 32px;
   height: 32px;
@@ -707,9 +747,12 @@ footer .column > a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: bottom 0.4s, transform 0.4s, opacity 0.4s; /* Added opacity transition */
-  cursor: pointer; /* Add cursor style to indicate it's clickable */
-  opacity: 0; /* Initially hide the button */
+  transition: bottom 0.4s, transform 0.4s, opacity 0.4s;
+  /* Added opacity transition */
+  cursor: pointer;
+  /* Add cursor style to indicate it's clickable */
+  opacity: 0;
+  /* Initially hide the button */
 }
 
 .scroll-up:hover {
@@ -725,7 +768,8 @@ footer .column > a:hover {
 
 /*light mode ko*/
 body.light-mode {
-  background-color: #fff; /* Light background color */
+  background-color: #fff;
+  /* Light background color */
 }
 
 body.light-mode .sub-header {
@@ -752,11 +796,11 @@ body.light-mode h2 {
   color: #252422;
 }
 
-body.light-mode .services-list h2{
+body.light-mode .services-list h2 {
   color: #252422;
 }
 
-body.light-mode .services-list p{
+body.light-mode .services-list p {
   color: #252422;
 }
 
@@ -805,7 +849,7 @@ body.light-mode .project-container .goto::before {
   background-color: #252422;
 }
 
-body.light-mode .hobbies-container h2{
+body.light-mode .hobbies-container h2 {
   color: #252422;
 }
 
@@ -825,11 +869,3 @@ body.light-mode footer h4 {
 body.light-mode .copyright {
   color: #252422;
 }
-
-
-
-
-
-
-
-
