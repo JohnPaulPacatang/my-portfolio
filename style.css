@@ -813,7 +813,6 @@ body.light-mode .card p {
 }
 
 body.light-mode .card:hover {
-  background-color: #edf2f4;
   border-color: #323232;
 }
 
